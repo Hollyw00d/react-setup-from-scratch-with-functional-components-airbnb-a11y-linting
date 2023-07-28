@@ -25,6 +25,13 @@
 `npm run format`
 - To run ESLint against your JS and JSX files in the root directory do:  
 `npm run lint`
+- To allow class components (and not ONLY function components) on the __.eslintrc.json__ file in the `"rules"` entry add a `"react/prefer-stateless-function": false` property value like the example below (which also forces you to make semicolons not optional):
+```
+  "rules": {
+    "semi": "error",
+    "react/prefer-stateless-function": false
+  }
+```
 
 ## AirBnB React ESLint Rules for JS and JSX
 - With the current setup in this repo, functional components will need to use normal functions and NOT arrow functions. A good example is below:

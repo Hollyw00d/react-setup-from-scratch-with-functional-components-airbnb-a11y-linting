@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["airbnb", "plugin:jsx-a11y/recommended", "prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "semi": "error",
+    "react/prefer-stateless-function": false
+  }
+}
