@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/build'),
     filename: 'bundle.js'
   },
   resolve: {
@@ -30,7 +30,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               query: {
-                name: 'dist/[name].[ext]'
+                name: 'build/[name].[ext]'
               }
             }
           },

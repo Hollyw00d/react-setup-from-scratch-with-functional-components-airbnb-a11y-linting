@@ -8,7 +8,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "buildopen": "npx live-server --open=dist/index.html"
+    "buildopen": "npx live-server --open=build/index.html"
   },
   "keywords": [],
   "author": "",
