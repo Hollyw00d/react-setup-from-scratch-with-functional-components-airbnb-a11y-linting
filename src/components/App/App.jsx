@@ -3,7 +3,6 @@ import ClickCounter from '../ClickCounter/ClickCounter';
 import lowerCase from '../../utils/lowercase/lowercase';
 import image from '../../images/react-logo.png';
 import cover from '../../images/cover.svg';
-import './App.css';
 
 function App() {
   return (
