@@ -7,6 +7,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "start": "webpack-dev-server --mode development --open --hot",
+    "watch": "webpack --watch --progress --mode development",
     "build": "webpack --mode production",
     "buildopen": "npx live-server --open=build/index.html"
   },
