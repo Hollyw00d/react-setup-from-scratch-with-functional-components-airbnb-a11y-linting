@@ -22,7 +22,21 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true // Enable source maps for CSS
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true // Enable source maps for SASS
+            }
+          }
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -62,5 +76,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/style.css'
     })
-  ]
+  ],
+  devtool: 'source-map'
 };
